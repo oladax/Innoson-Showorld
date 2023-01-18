@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+</head>
+<style>
+   *, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 300px;
+    height: 98vh;
+    background-color: blue;
+    border-bottom-style: groove;
+    border-bottom-width: 10px;
+    border-radius: 24px;
+    border-top-style: groove;
+    border-top-width: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 0.4rem;
+    text-decoration: underline;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container div, section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+div .rot{
+    width: 106px;
+    height: 106px;
+    border-radius: 100%;
+    object-fit: contain;
+    margin-bottom: 14px;
+    object-position: center;
+    transition: animation 1s ease;
+}
+
+div p{
+    font-size: 15px;
+    color: white;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+    color: white;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.5;
+    text-align: center;
+    text-decoration: underline;
+}
+
+ul{
+    padding-top: 10px;
+}
+
+ul li{
+    list-style-type: auto;
+    color: white;
+    margin-top: 6px;
+}
+strong{
+    color:#af3204;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.5;
+    padding-right: 2px;
+}
+.uba{
+    transform: none;
+    width: 106px;
+    object-fit: contain;
+    object-position: center;
+}
+</style>
+<body>
+    <main>
+     <div class="container">
+        <h2>Why should you donate but not necessarily</h2>
+
+        <div>
+            <img  class="rot" src="./oladax.jpg" alt="">
+            <p id="donate-speech"></p>
+        </div>
+
+        <section>
+            <h3>Bank's Details</h3>
+            <ul>
+                <li><strong>Name:</strong> Olamide daniel banjo.</li>
+                <li><strong>Bank:</strong> Uba.</li>
+                <li><strong>Acct:</strong> 2156228921.</li>
+            </ul>
+            <img class="uba" src="./uba-removebg-preview.png" alt="">
+        </section>
+     </div>
+    </main>
+    <script src="./donate.js"></script>
+</body>
+</html>
